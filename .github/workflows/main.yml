@@ -10,10 +10,10 @@ jobs:
       with:
         node-version: 14.17.0
         #cache-dependency-path: /frontend/package.json
-    - run: |
-        cd frontend
-        npm install
-        npm start
+    - run: npm install
+      working-directory: ./frontend
+    - run: npm start
+      working-directory: ./frontend
         
         
           
