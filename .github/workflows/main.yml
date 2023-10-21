@@ -14,11 +14,14 @@ jobs:
         password: ${{ secrets.DOCKER_HUB_LOGIN }}
     - name: Build and push Docker images
       uses: docker/build-push-action@v5.0.0
-        file: ./frontend/Dockerfile
-        
-        
-      
+      with:
+        # Path to the Dockerfile
+        file: ./frontend
+        push: True
+    
             
-        
-        
           
+                
+            
+            
+              
