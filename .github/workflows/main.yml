@@ -12,8 +12,13 @@ jobs:
         #cache-dependency-path: /frontend/package.json
     - run: npm install
       working-directory: ./frontend
-    - run: npm start
+    #- run: npm start
+    - run: npm build
       working-directory: ./frontend
+    - uses: actions/upload-artifact@v3
+      with:
+          name: webpack artifacts
+          path: ./frontend
         
         
           
