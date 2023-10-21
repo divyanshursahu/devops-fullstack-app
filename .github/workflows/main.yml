@@ -6,19 +6,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
+    - name: Docker login
+      uses: docker/login-action@v3.0.0
       with:
-        node-version: 14.17.0
-        #cache-dependency-path: /frontend/package.json
-    - run: npm install
-      working-directory: ./frontend
-    #- run: npm start
-    - run: npm build
-      working-directory: ./frontend
-    - uses: actions/upload-artifact@v3
-      with:
-          name: webpack artifacts
-          path: ./frontend
+        registry: dssshahu
+        username: dssshahu
+        password: ${{ secrets.DOCKER_HUB_LOGIN }}
+    - name: Build and push Docker images
+      uses: docker/build-push-action@v5.0.0
+        file: ./frontend/Dockerfile
+        
+        
+      
+            
         
         
           
