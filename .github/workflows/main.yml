@@ -10,6 +10,7 @@ jobs:
       with:
         node-version: 14.17.0
     - run: | 
+        cd frontend
         npm install
         npm start
         
