@@ -9,10 +9,9 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 14.17.0
-    - run: | 
-        cd frontend
-        npm install
-        npm start
+    - run: cd frontend
+    - run: npm install
+    - run: npm start
         
         
           
