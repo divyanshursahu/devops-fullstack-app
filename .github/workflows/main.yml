@@ -1,7 +1,6 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-# on: [push]
-on: [no ci]
+on: [push]
 jobs:
   Build-and-Push-images:
     runs-on: ubuntu-latest
@@ -23,11 +22,12 @@ jobs:
   Deploy-resources:
     runs-on: ubuntu-latest
     steps:
-    - name: terraform
-      run: terraform init
+    - name: terraform init
+      run: terraform init 
       working-directory: terraform-code
-            
-          
+    - name: terraform plan
+      run: terraform plan -out "tfplan"
+      working-directory: terraform-code    
                 
             
             
