@@ -18,6 +18,9 @@ jobs:
         cd backend
         docker build -t dssshahu/backend-image .
         docker push dssshahu/backend-image
+    - name: check ansible
+      run: |
+       ansible
             
           
                 
