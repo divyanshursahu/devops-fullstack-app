@@ -23,11 +23,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: terraform init
-      run: terraform init 
-      working-directory: ./terraform-code
+      run: |
+        cd terraform-code
+        terraform init 
+      # working-directory: terraform-code
     - name: terraform plan
       run: terraform plan -out "tfplan"
-      working-directory: ./terraform-code
+      # working-directory: terraform-code
                 
             
             
