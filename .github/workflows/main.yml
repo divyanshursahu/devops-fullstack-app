@@ -22,6 +22,7 @@ jobs:
   Deploy-resources:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     - name: terraform init
       run: |
         cd tf-code
