@@ -10,13 +10,7 @@ terraform {
 provider "aws" {
   # Configuration options
   region = "us-east-1"
-  access_key = "ASIAVRULR5SO645LY3XS"
-  secret_key = "6sFW/NGBSoX0vtsSWFsx5IDI+65AmlizPR7Fmld1"
-  token = "FwoGZXIvYXdzEBsaDCcK3DBHVal+ljcPFSLVAa+xFoyoW1vt1fcV/5dYWER8LJajgDmnM73pOZ4VssVtvFpeOVQ4pYexu2jYPy+HL3pxR/14+U65IjoNmvg781VTNqwxevjpnoiLi520vKqcWW/w6KNIkNW5pi3n/wK2k39yUXO/NMa/LBXzMU1dnS8zB2SSpsLjmZuBbOh+rp9xde/AlVs5vHYBdmfOiVKhraDAILZpawRPAvx4rNAhlp/rM68HnolRNCMnYzNEYFC4BUdi/Z/ya+AW/8+hWi89HOIymEeomDguulMpfna+czZZ9m5Lryjh0NqpBjItZPXLrf8UYebOipBVuk20hIdewYsMgHKq5UIq6NG4OttmbbpKw/OpPKw6I4oT"
-#   export AWS_ACCESS_KEY_ID=ASIAVRULR5SO645LY3XS
-#   export AWS_SECRET_ACCESS_KEY=6sFW/NGBSoX0vtsSWFsx5IDI+65AmlizPR7Fmld1
-#   export AWS_SESSION_TOKEN=FwoGZXIvYXdzEBsaDCcK3DBHVal+ljcPFSLVAa+xFoyoW1vt1fcV/5dYWER8LJajgDmnM73pOZ4VssVtvFpeOVQ4pYexu2jYPy+HL3pxR/14+U65IjoNmvg781VTNqwxevjpnoiLi520vKqcWW/w6KNIkNW5pi3n/wK2k39yUXO/NMa/LBXzMU1dnS8zB2SSpsLjmZuBbOh+rp9xde/AlVs5vHYBdmfOiVKhraDAILZpawRPAvx4rNAhlp/rM68HnolRNCMnYzNEYFC4BUdi/Z/ya+AW/8+hWi89HOIymEeomDguulMpfna+czZZ9m5Lryjh0NqpBjItZPXLrf8UYebOipBVuk20hIdewYsMgHKq5UIq6NG4OttmbbpKw/OpPKw6I4oT
-
+  
 }
 
 # data "aws_ami" "ubuntu" {
