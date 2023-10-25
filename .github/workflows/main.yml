@@ -24,10 +24,10 @@ jobs:
     steps:
     - name: terraform init
       run: terraform init 
-      working-directory: terraform-code
+      working-directory: ./terraform-code
     - name: terraform plan
       run: terraform plan -out "tfplan"
-      working-directory: terraform-code
+      working-directory: ./terraform-code
                 
             
             
